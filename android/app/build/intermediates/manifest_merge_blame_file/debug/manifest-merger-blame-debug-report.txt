@@ -1,0 +1,465 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.reactnativesirikit"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:4:3-75
+11-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:4:20-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:2:3-64
+12-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:2:20-62
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:5:3-72
+13-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:5:20-70
+14    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+14-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:6:3-71
+14-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:6:20-69
+15    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+15-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:7:3-69
+15-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:7:20-67
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:8:3-63
+16-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:8:20-61
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- These require runtime permissions on M -->
+17-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:9:3-77
+17-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:9:20-75
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:11:3-78
+18-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:11:20-76
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:12:3-76
+19-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:12:20-74
+20    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+20-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:13:3-82
+20-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:13:20-80
+21    <uses-permission android:name="android.permission.CAMERA" />
+21-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:14:3-62
+21-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:14:20-60
+22    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+22-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:15:3-68
+22-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:15:20-66
+23    <uses-permission android:name="android.permission.READ_CONTACTS" />
+23-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:16:3-69
+23-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:16:20-67
+24    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+24-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:17:3-70
+24-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:17:20-68
+25    <uses-permission android:name="android.permission.READ_CALENDAR" />
+25-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:18:3-69
+25-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:18:20-67
+26    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+26-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:19:3-70
+26-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:19:20-68
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:20:3-77
+27-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:20:20-75
+28    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+28-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:21:3-78
+28-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:21:20-76
+29    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+29-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:22:3-70
+29-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:22:20-68
+30    <uses-permission android:name="android.permission.INTERNET" />
+30-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:2:3-64
+30-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:2:20-62
+31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+31-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:24:3-79
+31-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:24:20-76
+32    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+32-->[com.facebook.flipper:flipper:0.54.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/6cb8ff451b49dfd22230718ef4b0665a/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+32-->[com.facebook.flipper:flipper:0.54.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/6cb8ff451b49dfd22230718ef4b0665a/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[:expo-updates] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+33-->[:expo-updates] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
+34    <uses-permission android:name="android.permission.WAKE_LOCK" />
+34-->[:react-native-firebase] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+34-->[:react-native-firebase] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
+35    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+35-->[:expo-location] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-77
+35-->[:expo-location] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-74
+36    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+36-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
+36-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+37    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+37-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:5-110
+37-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:22-107
+38    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+38-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+38-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+39    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+39-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+39-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+40
+41    <application
+41-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:26:3-57:17
+42        android:name="com.reactnativesirikit.MainApplication"
+42-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:27:5-36
+43        android:allowBackup="false"
+43-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:31:5-32
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/00f482bd244d0d4f5747d8261f58e943/core-1.1.0/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+46-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:29:5-39
+47        android:label="@string/app_name"
+47-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:28:5-37
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:30:5-50
+49        android:theme="@style/AppTheme"
+49-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:32:5-36
+50        android:usesCleartextTraffic="true" >
+50-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/debug/AndroidManifest.xml:6:18-53
+51        <meta-data
+51-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:34:5-103
+52            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+52-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:34:16-67
+53            android:value="YOUR-APP-URL-HERE" />
+53-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:34:68-101
+54        <meta-data
+54-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:35:5-112
+55            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+55-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:35:16-68
+56            android:value="YOUR-APP-SDK-VERSION-HERE" />
+56-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:35:69-110
+57
+58        <activity
+58-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:36:5-48:16
+59            android:name="com.reactnativesirikit.MainActivity"
+59-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:37:7-35
+60            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+60-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:39:7-84
+61            android:label="@string/app_name"
+61-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:38:7-39
+62            android:launchMode="singleTask"
+62-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:40:7-38
+63            android:theme="@style/Theme.App.SplashScreen"
+63-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:42:7-52
+64            android:windowSoftInputMode="adjustResize" >
+64-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:41:7-49
+65            <intent-filter>
+65-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:44:7-47:23
+66                <action android:name="android.intent.action.MAIN" />
+66-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:45:9-60
+66-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:45:17-58
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:46:9-68
+68-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:46:19-66
+69            </intent-filter>
+70        </activity>
+71        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+71-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:49:5-81
+71-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:49:15-79
+72
+73        <service android:name="io.invertase.firebase.messaging.RNFirebaseMessagingService" >
+73-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:51:5-55:15
+73-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:51:14-87
+74            <intent-filter>
+74-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:52:7-54:23
+75                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+75-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:53:9-70
+75-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:53:17-67
+76            </intent-filter>
+77        </service>
+78        <service android:name="io.invertase.firebase.messaging.RNFirebaseBackgroundMessagingService" />
+78-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:56:5-100
+78-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:56:14-97
+79
+80        <meta-data
+80-->[:unimodules-react-native-adapter] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:91
+81            android:name="org.unimodules.core.AppLoader#react-native-headless"
+81-->[:unimodules-react-native-adapter] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+82            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+82-->[:unimodules-react-native-adapter] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+83
+84        <service
+84-->[:react-native-firebase] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
+85            android:name="com.google.firebase.components.ComponentDiscoveryService"
+85-->[:react-native-firebase] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
+86            android:directBootAware="true"
+86-->[com.google.firebase:firebase-common:19.4.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/b6aa8edcb2528d8f625e616b4b2fc525/jetified-firebase-common-19.4.0/AndroidManifest.xml:35:13-43
+87            android:exported="false" >
+87-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:76:13-37
+88            <meta-data
+88-->[:react-native-firebase] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
+89                android:name="com.google.firebase.components:io.invertase.firebase.ReactNativeFirebaseAppRegistrar"
+89-->[:react-native-firebase] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-116
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[:react-native-firebase] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:77:13-79:85
+92                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+92-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:78:17-109
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:79:17-82
+94            <meta-data
+94-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/8350f1aa6a422a061a6eb54202b92561/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:30:13-32:85
+95                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+95-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/8350f1aa6a422a061a6eb54202b92561/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:31:17-139
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/8350f1aa6a422a061a6eb54202b92561/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:32:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+98                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+98-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+100        </service>
+101
+102        <provider
+102-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-26:20
+103            android:name="expo.modules.filesystem.FileSystemFileProvider"
+103-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-74
+104            android:authorities="com.reactnativesirikit.FileSystemFileProvider"
+104-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+105            android:exported="false"
+105-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-37
+106            android:grantUriPermissions="true" >
+106-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-47
+107            <meta-data
+107-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-25:70
+108                android:name="android.support.FILE_PROVIDER_PATHS"
+108-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:17-67
+109                android:resource="@xml/file_system_provider_paths" />
+109-->[:expo-file-system] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
+110        </provider>
+111
+112        <service
+112-->[:expo-location] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-19:40
+113            android:name="expo.modules.location.services.LocationTaskService"
+113-->[:expo-location] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-78
+114            android:exported="false" />
+114-->[:expo-location] /Users/tushardalal/assignment/git/ReactNativeSiriKit/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
+115
+116        <activity
+116-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:27:9-44:20
+117            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+117-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:28:13-80
+118            android:excludeFromRecents="true"
+118-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:29:13-46
+119            android:exported="true"
+119-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:30:13-36
+120            android:launchMode="singleTask"
+120-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:31:13-44
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+121-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:32:13-72
+122            <intent-filter>
+122-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:33:13-43:29
+123                <action android:name="android.intent.action.VIEW" />
+123-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:17-69
+123-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:25-66
+124
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:17-76
+125-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:27-73
+126                <category android:name="android.intent.category.BROWSABLE" />
+126-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:17-78
+126-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:27-75
+127
+128                <data
+128-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:39:17-42:51
+129                    android:host="firebase.auth"
+129-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:40:21-49
+130                    android:path="/"
+130-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:41:21-37
+131                    android:scheme="genericidp" />
+131-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:42:21-48
+132            </intent-filter>
+133        </activity>
+134        <activity
+134-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:45:9-62:20
+135            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+135-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:46:13-79
+136            android:excludeFromRecents="true"
+136-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:47:13-46
+137            android:exported="true"
+137-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:48:13-36
+138            android:launchMode="singleTask"
+138-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:49:13-44
+139            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+139-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:50:13-72
+140            <intent-filter>
+140-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:51:13-61:29
+141                <action android:name="android.intent.action.VIEW" />
+141-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:17-69
+141-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:34:25-66
+142
+143                <category android:name="android.intent.category.DEFAULT" />
+143-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:17-76
+143-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:27-73
+144                <category android:name="android.intent.category.BROWSABLE" />
+144-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:17-78
+144-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:37:27-75
+145
+146                <data
+146-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:39:17-42:51
+147                    android:host="firebase.auth"
+147-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:40:21-49
+148                    android:path="/"
+148-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:41:21-37
+149                    android:scheme="recaptcha" />
+149-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:42:21-48
+150            </intent-filter>
+151        </activity>
+152
+153        <service
+153-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:64:9-73:19
+154            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+154-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:65:13-101
+155            android:enabled="true"
+155-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:66:13-35
+156            android:exported="false" >
+156-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:67:13-37
+157            <intent-filter>
+157-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:68:13-72:29
+158                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+158-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:17-89
+158-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:25-86
+159
+160                <category android:name="android.intent.category.DEFAULT" />
+160-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:17-76
+160-->[com.google.firebase:firebase-auth:20.0.1] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/9fddfa0db675886ff93add34da0ebced/jetified-firebase-auth-20.0.1/AndroidManifest.xml:36:27-73
+161            </intent-filter>
+162        </service>
+163        <!--
+164             FirebaseMessagingService performs security checks at runtime,
+165             but set to not exported to explicitly avoid allowing another app to call it.
+166        -->
+167        <service
+167-->[com.google.firebase:firebase-messaging:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/8bf5c2bf895539a1226ba6c64eb84b80/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:28:9-34:19
+168            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+168-->[com.google.firebase:firebase-messaging:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/8bf5c2bf895539a1226ba6c64eb84b80/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:29:13-82
+169            android:exported="false" >
+169-->[com.google.firebase:firebase-messaging:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/8bf5c2bf895539a1226ba6c64eb84b80/jetified-firebase-messaging-19.0.0/AndroidManifest.xml:30:13-37
+170            <intent-filter android:priority="-500" >
+170-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:52:7-54:23
+171                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+171-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:53:9-70
+171-->/Users/tushardalal/assignment/git/ReactNativeSiriKit/android/app/src/main/AndroidManifest.xml:53:17-67
+172            </intent-filter>
+173        </service>
+174
+175        <receiver
+175-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+176            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+176-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+177            android:exported="true"
+177-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+178            android:permission="com.google.android.c2dm.permission.SEND" >
+178-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+179            <intent-filter>
+179-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
+180                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+180-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
+180-->[com.google.firebase:firebase-iid:19.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/587ec93ab3c9fb3a23168212d3a8e07f/jetified-firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
+181            </intent-filter>
+182        </receiver>
+183
+184        <activity
+184-->[com.google.android.gms:play-services-base:17.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/a8235920046dd925bdec8b6748f129a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+185            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+185-->[com.google.android.gms:play-services-base:17.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/a8235920046dd925bdec8b6748f129a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+186            android:exported="false"
+186-->[com.google.android.gms:play-services-base:17.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/a8235920046dd925bdec8b6748f129a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+187            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+187-->[com.google.android.gms:play-services-base:17.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/a8235920046dd925bdec8b6748f129a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+188
+189        <receiver
+189-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:29:9-33:20
+190            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+190-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:30:13-85
+191            android:enabled="true"
+191-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:31:13-35
+192            android:exported="false" >
+192-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:32:13-37
+193        </receiver>
+194        <receiver
+194-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:34:9-42:20
+195            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+195-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:35:13-100
+196            android:enabled="true"
+196-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:36:13-35
+197            android:exported="true"
+197-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:37:13-36
+198            android:permission="android.permission.INSTALL_PACKAGES" >
+198-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:38:13-69
+199            <intent-filter>
+199-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:39:13-41:29
+200                <action android:name="com.android.vending.INSTALL_REFERRER" />
+200-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:17-79
+200-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:25-76
+201            </intent-filter>
+202        </receiver>
+203
+204        <service
+204-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:44:9-47:40
+205            android:name="com.google.android.gms.measurement.AppMeasurementService"
+205-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:45:13-84
+206            android:enabled="true"
+206-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:46:13-35
+207            android:exported="false" />
+207-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:47:13-37
+208        <service
+208-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:48:9-52:72
+209            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+209-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:49:13-87
+210            android:enabled="true"
+210-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:50:13-35
+211            android:exported="false"
+211-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:51:13-37
+212            android:permission="android.permission.BIND_JOB_SERVICE" />
+212-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7f7e7738aa425572504eeee612961576/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:52:13-69
+213
+214        <provider
+214-->[com.google.firebase:firebase-common:19.4.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/b6aa8edcb2528d8f625e616b4b2fc525/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
+215            android:name="com.google.firebase.provider.FirebaseInitProvider"
+215-->[com.google.firebase:firebase-common:19.4.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/b6aa8edcb2528d8f625e616b4b2fc525/jetified-firebase-common-19.4.0/AndroidManifest.xml:27:13-77
+216            android:authorities="com.reactnativesirikit.firebaseinitprovider"
+216-->[com.google.firebase:firebase-common:19.4.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/b6aa8edcb2528d8f625e616b4b2fc525/jetified-firebase-common-19.4.0/AndroidManifest.xml:28:13-72
+217            android:directBootAware="true"
+217-->[com.google.firebase:firebase-common:19.4.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/b6aa8edcb2528d8f625e616b4b2fc525/jetified-firebase-common-19.4.0/AndroidManifest.xml:29:13-43
+218            android:exported="false"
+218-->[com.google.firebase:firebase-common:19.4.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/b6aa8edcb2528d8f625e616b4b2fc525/jetified-firebase-common-19.4.0/AndroidManifest.xml:30:13-37
+219            android:initOrder="100" />
+219-->[com.google.firebase:firebase-common:19.4.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/b6aa8edcb2528d8f625e616b4b2fc525/jetified-firebase-common-19.4.0/AndroidManifest.xml:31:13-36
+220
+221        <meta-data
+221-->[com.google.android.gms:play-services-basement:17.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/e268f696b142f16bfc90e1700c3f52db/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+222            android:name="com.google.android.gms.version"
+222-->[com.google.android.gms:play-services-basement:17.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/e268f696b142f16bfc90e1700c3f52db/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+223            android:value="@integer/google_play_services_version" />
+223-->[com.google.android.gms:play-services-basement:17.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/e268f696b142f16bfc90e1700c3f52db/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+224
+225        <service
+225-->[androidx.room:room-runtime:2.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/5fc9ee0d01caf85881d7e9c56e34e7fb/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+226            android:name="androidx.room.MultiInstanceInvalidationService"
+226-->[androidx.room:room-runtime:2.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/5fc9ee0d01caf85881d7e9c56e34e7fb/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+227            android:exported="false" />
+227-->[androidx.room:room-runtime:2.1.0] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/5fc9ee0d01caf85881d7e9c56e34e7fb/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+228        <service
+228-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+229            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+229-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+230            android:exported="false" />
+230-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+231        <service
+231-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+232            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+232-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+233            android:exported="false" />
+233-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+234        <service
+234-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+235            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+235-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+236            android:exported="false" />
+236-->[io.nlopez.smartlocation:library:3.2.11] /Users/tushardalal/.gradle/caches/transforms-2/files-2.1/7953431d0be045086c55538bda9d055b/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+237    </application>
+238
+239</manifest>

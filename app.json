@@ -1,0 +1,12 @@
+{
+  "name": "ReactNativeSiriKit",
+  "displayName": "ReactNativeSiriKit",
+  "expo": {
+    "name": "ReactNativeSiriKit",
+    "slug": "ReactNativeSiriKit",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

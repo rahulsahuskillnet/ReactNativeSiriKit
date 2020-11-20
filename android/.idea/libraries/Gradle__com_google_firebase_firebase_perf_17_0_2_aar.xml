@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-perf:17.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c57dedd098b7dca85a5acba444f373fd/jetified-firebase-perf-17.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da4bc267d697fc89ea24f00eca456043/jetified-firebase-perf-17.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/75d04403e70c101bdd9e7b50e0c5ffb5/jetified-firebase-perf-17.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/75d04403e70c101bdd9e7b50e0c5ffb5/jetified-firebase-perf-17.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/75d04403e70c101bdd9e7b50e0c5ffb5/jetified-firebase-perf-17.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-perf/17.0.2/92c5c09780a268c36cec77c48e77169438708889/firebase-perf-17.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

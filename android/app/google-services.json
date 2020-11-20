@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "141250074047",
+    "firebase_url": "https://reactnativesirikit.firebaseio.com",
+    "project_id": "reactnativesirikit",
+    "storage_bucket": "reactnativesirikit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141250074047:android:8b8e677f405482c5cc3d0a",
+        "android_client_info": {
+          "package_name": "com.reactnativesirikit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141250074047-ljtcht4v1vg7lis9hdu8uojvk1mu5n9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYTsV6bbqHASDtt7ze16c8ICfygULkCFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141250074047-ljtcht4v1vg7lis9hdu8uojvk1mu5n9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

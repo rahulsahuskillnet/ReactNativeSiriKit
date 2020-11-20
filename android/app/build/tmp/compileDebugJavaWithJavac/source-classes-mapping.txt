@@ -1,0 +1,17 @@
+com/reactnativesirikit/MainActivity.java
+ com.reactnativesirikit.MainActivity
+ com.reactnativesirikit.MainActivity$1
+com/reactnativesirikit/generated/BasePackageList.java
+ com.reactnativesirikit.generated.BasePackageList
+com/reactnativesirikit/MainApplication.java
+ com.reactnativesirikit.MainApplication
+ com.reactnativesirikit.MainApplication$1
+com/reactnativesirikit/BuildConfig.java
+ com.reactnativesirikit.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/reactnativesirikit/ReactNativeFlipper.java
+ com.reactnativesirikit.ReactNativeFlipper
+ com.reactnativesirikit.ReactNativeFlipper$1
+ com.reactnativesirikit.ReactNativeFlipper$2
+ com.reactnativesirikit.ReactNativeFlipper$2$1

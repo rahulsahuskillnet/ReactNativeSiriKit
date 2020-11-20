@@ -1,0 +1,6 @@
+module Pods_ReactNativeSiriKit {
+  umbrella header "Pods-ReactNativeSiriKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
