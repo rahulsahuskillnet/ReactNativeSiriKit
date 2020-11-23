@@ -1,84 +1,60 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { AsyncStorage, StyleSheet, Text, View } from "react-native";
-import firebase from "react-native-firebase";
-
+import { LogBox } from "react-native";
+import {
+  Header,
+  Right,
+  Button,
+  Icon,
+  Text,
+  Footer,
+  Row,
+  Item,
+  Input,
+} from "native-base";
+import ChatComponent from "./components/chats/ChatComponent";
+import { ScrollView } from "react-native-gesture-handler";
 export default class App extends React.Component {
-  getToken = async () => {
-    let fcmToken = await AsyncStorage.getItem("fcmToken");
-    if (!fcmToken) {
-      fcmToken = await firebase.messaging().getToken();
-      console.log("fcmToken",fcmToken);
-      if (fcmToken) {
-        console.log("fcmToken",fcmToken);
-        await AsyncStorage.setItem("fcmToken", fcmToken);
-      }
-    }
+  componentDidMount = () => {
+    //To remove warning and error notifications while app is running on the simulator or the device
+    LogBox.ignoreLogs(["Warning: Each", "Warning: Failed"]);
+    LogBox.ignoreAllLogs(true);
   };
-
-  checkPermission = async () => {
-    const enabled = await firebase.messaging().hasPermission();
-    if (enabled) {
-      this.getToken();
-    } else {
-      this.requestPermission();
-    }
-  };
-
-  requestPermission = async () => {
-    try {
-      await firebase.messaging().requestPermission();
-      this.getToken();
-    } catch (error) {
-      console.log("permission rejected");
-    }
-  };
-
-  createNotificationListeners = () => {
-    this.onUnsubscribeNotificaitonListener = firebase
-      .notifications()
-      .onNotification((notification) => {
-        firebase.notifications().displayNotification(notification);
-      });
-  };
-
-  removeNotificationListeners = () => {
-    this.onUnsubscribeNotificaitonListener();
-  };
-
-  componentDidMount() {
-    // Build a channel
-    const channel = new firebase.notifications.Android.Channel(
-      "test-channel",
-      "Test Channel",
-      firebase.notifications.Android.Importance.Max
-    ).setDescription("My apps test channel");
-
-    // Create the channel
-    firebase.notifications().android.createChannel(channel);
-    this.checkPermission();
-    this.createNotificationListeners();
-  }
-
-  componentWillUnmount() {
-    this.removeNotificationListeners();
-  }
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </View>
+      <>
+        <Header searchBar noLeft>
+          <Item style={{ flex: 1 }}>
+            <Icon name="search" />
+            <Input style={{width:600}} placeholder="Search User" />
+          </Item>
+          <Right>
+            <Button transparent>
+              <Text>Cancel</Text>
+            </Button>
+          </Right>
+        </Header>
+        <ScrollView style={{ marginLeft: 5, marginRight: 5 }}>
+          <ChatComponent />
+        </ScrollView>
+        <Footer>
+          <Row style={{ marginLeft: 20 }}>
+            <Button style={{ margin: 10 }}>
+              <Text>Forward</Text>
+            </Button>
+            <Button
+              style={{
+                margin: 10,
+                backgroundColor: "white",
+                borderWidth: 1,
+                borderColor: "#696969",
+              }}
+            >
+              <Text style={{ color: "#585858" }}>Cancel</Text>
+            </Button>
+          </Row>
+        </Footer>
+      </>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
