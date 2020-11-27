@@ -67,4 +67,18 @@ export default StyleSheet.create({
     marginLeft: 15,
     marginRight: 5,
   },
+  circle: {
+    width: 15,
+    height: 15,
+    borderRadius: 15 / 2,
+    backgroundColor: "#88D969",
+    borderWidth: 2,
+    borderRightColor: "#fff",
+    borderLeftColor: "#fff",
+    borderTopColor: "#fff",
+    borderBottomColor: "#fff",
+    position: "absolute",
+    top: -5,
+    right: 0,
+  },
 });

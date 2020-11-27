@@ -4,6 +4,7 @@ import { View, Image, Text, TouchableOpacity } from "react-native";
 import styles from "./Style";
 import { Button, Footer, Row } from "native-base";
 import { ScrollView } from "react-native-gesture-handler";
+import { Actions } from "react-native-router-flux";
 
 const json = {
   Chats: [
@@ -129,9 +130,9 @@ export default class ChatComponent extends React.Component {
       let chatObj = chats[index];
       chatObj.isChecked = value;
       if (value) {
-        selectedChats.push(chatObj.id);
+        selectedChats.push(chatObj);
       } else {
-        const index = selectedChats.indexOf(chatObj.id);
+        const index = selectedChats.indexOf(chatObj);
         if (index > -1) {
           selectedChats.splice(index, 1);
         }
@@ -141,9 +142,9 @@ export default class ChatComponent extends React.Component {
       let contactObj = contacts[index];
       contactObj.isChecked = value;
       if (value) {
-        selectedContacts.push(contactObj.id);
+        selectedContacts.push(contactObj);
       } else {
-        const index = selectedContacts.indexOf(contactObj.id);
+        const index = selectedContacts.indexOf(contactObj);
         if (index > -1) {
           selectedContacts.splice(index, 1);
         }
@@ -164,23 +165,11 @@ export default class ChatComponent extends React.Component {
     this.setState({ chats, contacts });
   };
 
-  renderItem = ({ item, index }) => {
-    return (
-      <TouchableOpacity>
-        <View style={styles.row}>
-          <Image source={item.image} style={styles.pic} />
-          <View>
-            <View style={styles.nameContainer}>
-              <Text style={styles.nameTxt}>{item.name}</Text>
-              <CheckBox />
-            </View>
-            <View style={styles.msgContainer}>
-              <Text style={styles.msgTxt}>{item.message}</Text>
-            </View>
-          </View>
-        </View>
-      </TouchableOpacity>
-    );
+  forwardList = () => {
+    Actions.forwardedList({
+      selectedChats: this.state.selectedChats,
+      selectedContacts: this.state.selectedContacts,
+    });
   };
 
   render() {
@@ -188,8 +177,8 @@ export default class ChatComponent extends React.Component {
     return (
       <React.Fragment>
         <ScrollView style={{ marginLeft: 5, marginRight: 5 }}>
-          {(selectedChats.length > 0 || selectedContacts.length > 0) && (
-            <TouchableOpacity onPress={() => alert("Create a group")}>
+          {(selectedChats.length > 1 || selectedContacts.length > 1) && (
+            <TouchableOpacity onPress={() => this.forwardList()}>
               <View style={styles.row}>
                 <Image
                   source={require("../../images/usergroup.png")}
@@ -218,7 +207,10 @@ export default class ChatComponent extends React.Component {
                 }}
               >
                 <View style={styles.row}>
-                  <Image source={item.image} style={styles.pic} />
+                  <View>
+                    <Image source={item.image} style={styles.pic} />
+                    <View style={styles.circle}></View>
+                  </View>
                   <View>
                     <View style={styles.nameContainer}>
                       <Text style={styles.nameTxt}>{item.name}</Text>
@@ -249,7 +241,10 @@ export default class ChatComponent extends React.Component {
                 }}
               >
                 <View style={styles.row}>
-                  <Image source={item.image} style={styles.pic} />
+                  <View>
+                    <Image source={item.image} style={styles.pic} />
+                    <View style={styles.circle}></View>
+                  </View>
                   <View>
                     <View style={styles.nameContainer}>
                       <Text style={styles.nameTxt}>{item.name}</Text>
@@ -274,7 +269,10 @@ export default class ChatComponent extends React.Component {
         {(selectedChats.length > 0 || selectedContacts.length > 0) && (
           <Footer>
             <Row style={{ marginLeft: 20 }}>
-              <Button style={styles.forwardButton}>
+              <Button
+                style={styles.forwardButton}
+                onPress={() => this.forwardList()}
+              >
                 <Text
                   style={{
                     color: "#ffffff",

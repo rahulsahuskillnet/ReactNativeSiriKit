@@ -11,13 +11,34 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		356F5262E90606109B3A77DE /* libPods-ReactNativeSiriKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB07ABDB048FCC8D1F85C12 /* libPods-ReactNativeSiriKit.a */; };
+		17AF97CDB8714104BF90265B /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F2A4FE6322D4E9A80C4ECAF /* Zocial.ttf */; };
+		22B54E5EE5F14B07821E95E2 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E703AA2A6B154515A100B6DB /* Roboto_medium.ttf */; };
+		356FEAB52514416284BC35B1 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB029C7AA454C93B7718122 /* Entypo.ttf */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		4217494982E644D590624CB5 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6D31C709A17414A8133C599 /* Roboto.ttf */; };
+		42249D4ACF725038D43F75BD /* libPods-ReactNativeSiriKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7110ADFDE4FE1F5F0BFEA05E /* libPods-ReactNativeSiriKit.a */; };
+		486F9E150B1049E086055BAA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DD509B770F44DE382C3372B /* AntDesign.ttf */; };
+		6255717671624C51A6EC1B4B /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F9D7A94B91045A688C32173 /* FontAwesome5_Brands.ttf */; };
+		67E154345AC24FB6AD8DBAB3 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B66087869E4504BA515865 /* Fontisto.ttf */; };
+		699437AD3D954A5998E3BC78 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CECF821E866429187CC7199 /* Ionicons.ttf */; };
+		77FC33BBC9574D4CAC552D1A /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E755A6200A4B598CF1F522 /* FontAwesome5_Regular.ttf */; };
+		7884A26A8DCC4A0BB5108C32 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8361AAB3C074D3E8ACF7510 /* MaterialCommunityIcons.ttf */; };
+		8696771891AD4137A2E143EB /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0B623922A1643069EED7149 /* MaterialIcons.ttf */; };
+		88508B4E67F944F5870D61E7 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EF4FEB8BA4441008B54F994 /* Foundation.ttf */; };
+		9C3AFE6580EC45B7819D092A /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF687D51F76D4DFDADCF217B /* Octicons.ttf */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		BFEE4B74181846DFB52C6C0A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACD015DD712F4C9AB206BF63 /* SimpleLineIcons.ttf */; };
+		BFF9E54D757E4226B553C80E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C59CB07E4C1541A489A3DFE4 /* FontAwesome.ttf */; };
+		CBDF88B76C3E4695908B745C /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 117C14BD32D740E2BE3D8CFD /* Feather.ttf */; };
+		CE588568D8764E0E930297C9 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0540DAB49B53462680AAD4E8 /* FontAwesome5_Solid.ttf */; };
+		E1C5E4A2FDD44A728C583BD0 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8FDC3033BA5405F8F00F300 /* EvilIcons.ttf */; };
+		F9D97E1B0487463E9F3CAF83 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3386D620118C430DA651746E /* rubicon-icon-font.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		0540DAB49B53462680AAD4E8 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		117C14BD32D740E2BE3D8CFD /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeSiriKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeSiriKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeSiriKit/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativeSiriKit/AppDelegate.m; sourceTree = "<group>"; };
@@ -25,13 +46,30 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeSiriKit/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeSiriKit/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeSiriKit/main.m; sourceTree = "<group>"; };
-		2BB07ABDB048FCC8D1F85C12 /* libPods-ReactNativeSiriKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSiriKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80E5BB5263DF504A6E935AE7 /* Pods-ReactNativeSiriKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSiriKit.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit.release.xcconfig"; sourceTree = "<group>"; };
-		875ACA03BCBD8A1610C20717 /* Pods-ReactNativeSiriKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSiriKit.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit.debug.xcconfig"; sourceTree = "<group>"; };
+		2DC36A17A84F1DB9EA0B911E /* Pods-ReactNativeSiriKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSiriKit.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit.release.xcconfig"; sourceTree = "<group>"; };
+		2DD509B770F44DE382C3372B /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		3386D620118C430DA651746E /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		45B66087869E4504BA515865 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		4CECF821E866429187CC7199 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		5571FD9EEE41D0CB92F7AB92 /* Pods-ReactNativeSiriKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSiriKit.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit.debug.xcconfig"; sourceTree = "<group>"; };
+		7110ADFDE4FE1F5F0BFEA05E /* libPods-ReactNativeSiriKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSiriKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF4FEB8BA4441008B54F994 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		86E755A6200A4B598CF1F522 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		8F9D7A94B91045A688C32173 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		9F2A4FE6322D4E9A80C4ECAF /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		A0B623922A1643069EED7149 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = ReactNativeSiriKit/SplashScreen.storyboard; sourceTree = "<group>"; };
+		ACD015DD712F4C9AB206BF63 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		C59CB07E4C1541A489A3DFE4 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		C6D31C709A17414A8133C599 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		CAB029C7AA454C93B7718122 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		D8FDC3033BA5405F8F00F300 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		E703AA2A6B154515A100B6DB /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		E8361AAB3C074D3E8ACF7510 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		FF687D51F76D4DFDADCF217B /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356F5262E90606109B3A77DE /* libPods-ReactNativeSiriKit.a in Frameworks */,
+				42249D4ACF725038D43F75BD /* libPods-ReactNativeSiriKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +100,38 @@
 			name = ReactNativeSiriKit;
 			sourceTree = "<group>";
 		};
+		196A0C293544434CB3AC1008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DD509B770F44DE382C3372B /* AntDesign.ttf */,
+				CAB029C7AA454C93B7718122 /* Entypo.ttf */,
+				D8FDC3033BA5405F8F00F300 /* EvilIcons.ttf */,
+				117C14BD32D740E2BE3D8CFD /* Feather.ttf */,
+				C59CB07E4C1541A489A3DFE4 /* FontAwesome.ttf */,
+				8F9D7A94B91045A688C32173 /* FontAwesome5_Brands.ttf */,
+				86E755A6200A4B598CF1F522 /* FontAwesome5_Regular.ttf */,
+				0540DAB49B53462680AAD4E8 /* FontAwesome5_Solid.ttf */,
+				45B66087869E4504BA515865 /* Fontisto.ttf */,
+				7EF4FEB8BA4441008B54F994 /* Foundation.ttf */,
+				4CECF821E866429187CC7199 /* Ionicons.ttf */,
+				E8361AAB3C074D3E8ACF7510 /* MaterialCommunityIcons.ttf */,
+				A0B623922A1643069EED7149 /* MaterialIcons.ttf */,
+				FF687D51F76D4DFDADCF217B /* Octicons.ttf */,
+				E703AA2A6B154515A100B6DB /* Roboto_medium.ttf */,
+				C6D31C709A17414A8133C599 /* Roboto.ttf */,
+				3386D620118C430DA651746E /* rubicon-icon-font.ttf */,
+				ACD015DD712F4C9AB206BF63 /* SimpleLineIcons.ttf */,
+				9F2A4FE6322D4E9A80C4ECAF /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				2BB07ABDB048FCC8D1F85C12 /* libPods-ReactNativeSiriKit.a */,
+				7110ADFDE4FE1F5F0BFEA05E /* libPods-ReactNativeSiriKit.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,6 +151,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
+				196A0C293544434CB3AC1008 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -113,8 +178,8 @@
 		D65327D7A22EEC0BE12398D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				875ACA03BCBD8A1610C20717 /* Pods-ReactNativeSiriKit.debug.xcconfig */,
-				80E5BB5263DF504A6E935AE7 /* Pods-ReactNativeSiriKit.release.xcconfig */,
+				5571FD9EEE41D0CB92F7AB92 /* Pods-ReactNativeSiriKit.debug.xcconfig */,
+				2DC36A17A84F1DB9EA0B911E /* Pods-ReactNativeSiriKit.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -126,13 +191,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeSiriKit" */;
 			buildPhases = (
-				114BEE3B99DCDBF33D9DD13F /* [CP] Check Pods Manifest.lock */,
+				C3189D73E866201D643FE7C2 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				23278C43F4CF1B973B6BF0B3 /* [CP] Copy Pods Resources */,
+				62E96DE097F86141FF10907C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +249,25 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				486F9E150B1049E086055BAA /* AntDesign.ttf in Resources */,
+				356FEAB52514416284BC35B1 /* Entypo.ttf in Resources */,
+				E1C5E4A2FDD44A728C583BD0 /* EvilIcons.ttf in Resources */,
+				CBDF88B76C3E4695908B745C /* Feather.ttf in Resources */,
+				BFF9E54D757E4226B553C80E /* FontAwesome.ttf in Resources */,
+				6255717671624C51A6EC1B4B /* FontAwesome5_Brands.ttf in Resources */,
+				77FC33BBC9574D4CAC552D1A /* FontAwesome5_Regular.ttf in Resources */,
+				CE588568D8764E0E930297C9 /* FontAwesome5_Solid.ttf in Resources */,
+				67E154345AC24FB6AD8DBAB3 /* Fontisto.ttf in Resources */,
+				88508B4E67F944F5870D61E7 /* Foundation.ttf in Resources */,
+				699437AD3D954A5998E3BC78 /* Ionicons.ttf in Resources */,
+				7884A26A8DCC4A0BB5108C32 /* MaterialCommunityIcons.ttf in Resources */,
+				8696771891AD4137A2E143EB /* MaterialIcons.ttf in Resources */,
+				9C3AFE6580EC45B7819D092A /* Octicons.ttf in Resources */,
+				22B54E5EE5F14B07821E95E2 /* Roboto_medium.ttf in Resources */,
+				4217494982E644D590624CB5 /* Roboto.ttf in Resources */,
+				F9D97E1B0487463E9F3CAF83 /* rubicon-icon-font.ttf in Resources */,
+				BFEE4B74181846DFB52C6C0A /* SimpleLineIcons.ttf in Resources */,
+				17AF97CDB8714104BF90265B /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +288,25 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n../node_modules/expo-updates/scripts/create-manifest-ios.sh\n";
 		};
-		114BEE3B99DCDBF33D9DD13F /* [CP] Check Pods Manifest.lock */ = {
+		62E96DE097F86141FF10907C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3189D73E866201D643FE7C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,24 +326,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		23278C43F4CF1B973B6BF0B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSiriKit/Pods-ReactNativeSiriKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -292,7 +376,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 875ACA03BCBD8A1610C20717 /* Pods-ReactNativeSiriKit.debug.xcconfig */;
+			baseConfigurationReference = 5571FD9EEE41D0CB92F7AB92 /* Pods-ReactNativeSiriKit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -300,7 +384,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3395PFZ7XQ;
 				ENABLE_BITCODE = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
@@ -321,14 +404,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80E5BB5263DF504A6E935AE7 /* Pods-ReactNativeSiriKit.release.xcconfig */;
+			baseConfigurationReference = 2DC36A17A84F1DB9EA0B911E /* Pods-ReactNativeSiriKit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3395PFZ7XQ;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = ReactNativeSiriKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

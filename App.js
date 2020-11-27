@@ -38,7 +38,7 @@ export default class App extends React.Component {
               onChangeText={(e) => this.handleSearch(e)}
             />
           </Item>
-          <Button transparent>
+          <Button transparent onPress={() => alert("Cancel pressed")}>
             <Text>Cancel</Text>
           </Button>
         </Header>
