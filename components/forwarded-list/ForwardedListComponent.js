@@ -1,10 +1,8 @@
-import CheckBox from "react-native-check-box";
 import React from "react";
 import { View, Image, Text, TouchableOpacity } from "react-native";
 import styles from "./Style";
-import { Button, Footer, Row } from "native-base";
 import { ScrollView } from "react-native-gesture-handler";
-import { Actions } from "react-native-router-flux";
+import ForwardedFooter from "./ForwardedFooter";
 
 export default class ForwardedListComponent extends React.Component {
   constructor(props) {
@@ -69,13 +67,7 @@ export default class ForwardedListComponent extends React.Component {
             <Text style={styles.subheading}>No users found.</Text>
           )}
         </ScrollView>
-        <Footer>
-          <Row style={{ marginLeft: 20 }}>
-            <Button style={styles.cancelButton} onPress={() => Actions.pop()}>
-              <Text style={{ color: "#000000" }}>Cancel</Text>
-            </Button>
-          </Row>
-        </Footer>
+        <ForwardedFooter />
       </React.Fragment>
     );
   }

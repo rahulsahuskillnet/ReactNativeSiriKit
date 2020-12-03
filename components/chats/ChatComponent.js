@@ -2,9 +2,9 @@ import CheckBox from "react-native-check-box";
 import React from "react";
 import { View, Image, Text, TouchableOpacity } from "react-native";
 import styles from "./Style";
-import { Button, Footer, Row } from "native-base";
 import { ScrollView } from "react-native-gesture-handler";
 import { Actions } from "react-native-router-flux";
+import ChatFooter from "./ChatFooter";
 
 const json = {
   Chats: [
@@ -267,29 +267,10 @@ export default class ChatComponent extends React.Component {
           })}
         </ScrollView>
         {(selectedChats.length > 0 || selectedContacts.length > 0) && (
-          <Footer>
-            <Row style={{ marginLeft: 20 }}>
-              <Button
-                style={styles.forwardButton}
-                onPress={() => this.forwardList()}
-              >
-                <Text
-                  style={{
-                    color: "#ffffff",
-                    textAlign: "center",
-                  }}
-                >
-                  Forward
-                </Text>
-              </Button>
-              <Button
-                style={styles.cancelButton}
-                onPress={() => this.onCancle()}
-              >
-                <Text style={{ color: "#000000" }}>Cancel</Text>
-              </Button>
-            </Row>
-          </Footer>
+          <ChatFooter
+            forwardList={() => this.forwardList()}
+            onCancle={() => this.onCancle()}
+          />
         )}
       </React.Fragment>
     );

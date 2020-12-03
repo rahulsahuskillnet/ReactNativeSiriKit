@@ -1,7 +1,10 @@
 import React from "react";
 import { LogBox } from "react-native";
-import { Header, Button, Icon, Text, Item, Input } from "native-base";
+import { Header, Button, Icon, Text, Item, Input, View } from "native-base";
+import SearchBar from "react-native-search-bar";
+
 import Routes from "./routes/routes";
+import { StatusBar } from "expo-status-bar";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,6 +22,7 @@ export default class App extends React.Component {
 
   handleSearch = (e) => {
     this.setState({ searchText: e });
+    this.refs.searchBar.focus();
   };
 
   handleSubmit = () => {
@@ -30,18 +34,18 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <Header searchBar rounded autoCorrect={false}>
-          <Item style={{ backgroundColor: "#fff" }}>
-            <Icon name="ios-search" onPress={() => this.handleSubmit()} />
-            <Input
-              placeholder="Search"
-              onChangeText={(e) => this.handleSearch(e)}
-            />
-          </Item>
-          <Button transparent onPress={() => alert("Cancel pressed")}>
-            <Text>Cancel</Text>
-          </Button>
-        </Header>
+        <View
+          style={{
+            marginTop:
+              Platform.OS == "ios" ? StatusBar.length + 50 : StatusBar.length,
+          }}
+        >
+          <SearchBar
+            ref="searchBar"
+            placeholder="Search"
+            onCancelButtonPress={() => alert("Cancel")}
+          />
+        </View>
         <Routes />
       </>
     );
