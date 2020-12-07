@@ -1,10 +1,13 @@
 import CheckBox from "react-native-check-box";
 import React from "react";
-import { View, Image, Text, TouchableOpacity } from "react-native";
+import { View, Image, Text, TouchableOpacity, Dimensions } from "react-native";
 import styles from "./Style";
 import { ScrollView } from "react-native-gesture-handler";
 import { Actions } from "react-native-router-flux";
 import ChatFooter from "./ChatFooter";
+import RBSheet from "react-native-raw-bottom-sheet";
+import { Button, Icon } from "native-base";
+import SearchBar from "react-native-search-bar";
 
 const json = {
   Chats: [
@@ -153,6 +156,97 @@ export default class ChatComponent extends React.Component {
     }
   };
 
+  bottomSheet = () => {
+    const { chats, contacts } = this.state;
+    const height = Dimensions.get("window").height;
+    return (
+      <RBSheet
+        ref={(ref) => {
+          this.RBSheet = ref;
+        }}
+        closeOnPressBack={false}
+        closeOnPressMask={false}
+        height={height - 100}
+        openDuration={250}
+        customStyles={{
+          container: {
+            borderTopLeftRadius: 15,
+            borderTopRightRadius: 15,
+          },
+        }}
+      >
+        <Text
+          style={[
+            styles.heading,
+            { marginTop: 10, marginLeft: 5, marginRight: 5 },
+          ]}
+        >
+          Share
+        </Text>
+        <ScrollView style={{ marginTop: 10, marginLeft: 5, marginRight: 5 }}>
+          <SearchBar
+            ref="searchBar"
+            placeholder="Search"
+            onCancelButtonPress={() => alert("Cancel")}
+          />
+          <View style={styles.shoppingModalContainer}>
+          <TouchableOpacity onPress={() => this.RBSheet.open()}>
+            <View style={styles.row}>
+              <Image
+                source={require("../../images/usergroup.png")}
+                style={styles.pic}
+              />
+              <View>
+                <View style={styles.nameContainer}>
+                  <Text style={styles.nameTxt}>Create a group</Text>
+                </View>
+                <View style={styles.msgContainer}>
+                  <Text style={styles.msgTxt}>
+                    Add some people to share the message
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </TouchableOpacity>
+            <Text style={styles.heading}>Recents</Text>
+            {chats.map((item, index) => {
+              return (
+                <TouchableOpacity
+                  key={index}
+                  onPress={() => {
+                    this.setChecked("chats", index, !item.isChecked);
+                  }}
+                >
+                  <View style={styles.row}>
+                    <View>
+                      <Image source={item.image} style={styles.pic} />
+                      <View style={styles.circle}></View>
+                    </View>
+                    <View>
+                      <View style={styles.nameContainer}>
+                        <Text style={styles.nameTxt}>{item.name}</Text>
+                        <Button
+                          bordered
+                          style={styles.sendButton}
+                          onClick={() => this.RBSheet.close()}
+                        >
+                          <Text>Send</Text>
+                        </Button>
+                      </View>
+                      <View style={styles.msgContainer}>
+                        <Text style={styles.msgTxt}>{item.message}</Text>
+                      </View>
+                    </View>
+                  </View>
+                </TouchableOpacity>
+              );
+            })}
+          </View>
+        </ScrollView>
+      </RBSheet>
+    );
+  };
+
   onCancle = () => {
     const { chats, contacts } = this.state;
     this.setState({ selectedContacts: [], selectedChats: [] });
@@ -176,27 +270,28 @@ export default class ChatComponent extends React.Component {
     const { chats, contacts, selectedChats, selectedContacts } = this.state;
     return (
       <React.Fragment>
+        {this.bottomSheet()}
         <ScrollView style={{ marginLeft: 5, marginRight: 5 }}>
-          {(selectedChats.length > 1 || selectedContacts.length > 1) && (
-            <TouchableOpacity onPress={() => this.forwardList()}>
-              <View style={styles.row}>
-                <Image
-                  source={require("../../images/usergroup.png")}
-                  style={styles.pic}
-                />
-                <View>
-                  <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Create a group</Text>
-                  </View>
-                  <View style={styles.msgContainer}>
-                    <Text style={styles.msgTxt}>
-                      Add some people to share the message
-                    </Text>
-                  </View>
+          {/* {(selectedChats.length > 1 || selectedContacts.length > 1) && ( */}
+          <TouchableOpacity onPress={() => this.RBSheet.open()}>
+            <View style={styles.row}>
+              <Image
+                source={require("../../images/usergroup.png")}
+                style={styles.pic}
+              />
+              <View>
+                <View style={styles.nameContainer}>
+                  <Text style={styles.nameTxt}>Create a group</Text>
+                </View>
+                <View style={styles.msgContainer}>
+                  <Text style={styles.msgTxt}>
+                    Add some people to share the message
+                  </Text>
                 </View>
               </View>
-            </TouchableOpacity>
-          )}
+            </View>
+          </TouchableOpacity>
+          {/* )} */}
           <Text style={styles.heading}>Conversations</Text>
           {chats.map((item, index) => {
             return (

@@ -81,4 +81,9 @@ export default StyleSheet.create({
     top: -5,
     right: 0,
   },
+  sendButton: {
+    height: 30,
+    width: 90,
+    justifyContent: "center",
+  },
 });
